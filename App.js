@@ -10,6 +10,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Header text='Standup Analytica' />
         <Heading text='Another Heading' />
+        <Button text='' />
       </View>
     );
   }
