@@ -1,10 +1,17 @@
-import { Button, StyleSheet } from 'react-native';
+import React from 'react';
+import { Button as RNButton, StyleSheet, View } from 'react-native';
+
+const styles = StyleSheet.create({
+  buttonText: {
+    color: '#ff9500',
+  }
+});
 
 export default class Button extends React.Component {
   render() {
     return (
-      <View style={styles.buttonText}>
-        <Button
+      <View>
+        <RNButton style={styles.buttonText}
           title="Stand Up!"
         />
       </View>
@@ -12,8 +19,3 @@ export default class Button extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({
-  buttonText: {
-    color: '#ff9500',
-  }
-});

@@ -2,26 +2,9 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import Header from './components/header'
-import Heading from './components/heading'
+import Paragraph from './components/paragraph'
+import Button from './components/button'
 
-import { Button } from 'react-native';
-
-
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Header text='Standup Analytica' />
-        <Heading text='Whatcha did, Whatcha doin, Whatcha gonna do' />
-
-        <Button
-          title="Stand Up!"
-        />
-
-      </View>
-    );
-  }
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -30,3 +13,22 @@ const styles = StyleSheet.create({
 
   },
 });
+
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Header text='Standup Analytica' />
+        <Paragraph text='Whatcha did, Whatcha doin, Whatcha gonna do' />
+
+        <Button
+          title="Stand Up!"
+
+        />
+        <Paragraph text='Didcha do what ya said you would?' />
+
+      </View>
+    );
+  }
+}
