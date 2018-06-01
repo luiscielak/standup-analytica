@@ -4,6 +4,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import Header from './components/header'
 import Heading from './components/heading'
 
+import { Button } from 'react-native';
+
 
 export default class App extends React.Component {
   render() {
@@ -11,6 +13,11 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Header text='Standup Analytica' />
         <Heading text='Whatcha did, Whatcha doin, Whatcha gonna do' />
+
+        <Button
+          title="Stand Up!"
+          color="#FF9500"
+        />
 
       </View>
     );
