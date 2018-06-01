@@ -16,7 +16,6 @@ export default class App extends React.Component {
 
         <Button
           title="Stand Up!"
-          color="#FF9500"
         />
 
       </View>
