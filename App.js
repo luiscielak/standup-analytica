@@ -1,5 +1,5 @@
 import React from 'react';
-import { SyleSheet, Text, View } from 'react-native';
+import { Text } from 'react-native';
 
 import ClientList from './app/screens/ClientList'
 

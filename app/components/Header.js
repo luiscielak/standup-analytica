@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { StyleSheet, View } from 'react-native'
+import { StyleSheet, View, Text } from 'react-native'
 
 const styles = StyleSheet.create({
   container: {
@@ -8,10 +8,12 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class ScreenContainer {
+export default class Header {
   render () {
     return (
-      <View style={styles.container} children={this.props.children} />
+      <View>
+        <Text>{ this.props.text }</Text>
+      </View>
     )
   }
 }
