@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { View, Text } from 'react-native'
 
-import ScreenContainer from '../Components/ScreenContainer'
+import ScreenContainer from '../components/ScreenContainer'
 
 export default class ClientList extends PureComponent {
   render () {
