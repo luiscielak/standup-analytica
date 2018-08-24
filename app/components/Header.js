@@ -8,11 +8,11 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class Header {
+export default class Header extends PureComponent {
   render () {
     return (
       <View>
-        <Text>{ this.props.text }</Text>
+        <Text>Clients</Text>
       </View>
     )
   }
